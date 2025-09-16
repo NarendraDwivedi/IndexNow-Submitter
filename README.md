@@ -1,14 +1,12 @@
 # IndexNow Submitter - A Powerful Desktop Tool for Instant Indexing
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/[Your-GitHub-Username]/IndexNow-Submitter)
+[![Version](https://img.shields.io/badge/version-1.2.0-blue.svg)](https://github.com/NarendraDwivedi/IndexNow-Submitter)
 [![.NET Framework](https://img.shields.io/badge/.NET_Framework-4.7.2-blueviolet.svg)](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
 
 **A feature-rich Windows desktop application to instantly submit your website's URLs to the IndexNow API, ensuring rapid discovery by search engines like Bing, Yandex, and more.**
 
 Tired of waiting for search engines to crawl and index your new or updated content? The IndexNow Submitter provides a simple, powerful, and user-friendly interface to directly notify search engines, improving your SEO performance by getting your content indexed in minutes, not days.
-
-
 
 ---
 
@@ -44,76 +42,51 @@ This tool is packed with features designed for both beginners and power users:
 
 ---
 
-## 📥 Installation & Usage
+## 🚀 Usages
 
-1.  Navigate to the **[Releases](https://github.com/[Your-GitHub-Username]/IndexNow-Submitter/releases)** page of this repository.
-2.  Download the latest `.zip` file (e.g., `IndexNow.Submitter.v1.0.0.zip`).
-3.  Extract the contents of the zip file to a folder on your computer.
-4.  Run `IndexNowSubmitter.exe`. No installation is required.
-
----
-
-## 📖 Detailed Walkthrough
-
-The application is organized into three simple tabs for different submission methods.
-
-### 1. Submit Using Sitemap
-This is the most powerful mode for submitting your entire site.
-
-* **Sitemap URL:** Enter the full URL to your `sitemap.xml` file.
-* **Fetch Sitemap:** Click to download and display all URLs from the sitemap in the "Fetched URL" list.
-* **API Key:** Your unique 32-character key.
-* **Generate API Key:** Creates a new, random key for you.
-* **Key Location:** The full URL on your website where the key file is hosted (e.g., `https://yourdomain.com/your-api-key.txt`).
-* **Verify:** Checks if the key file at the Key Location exists and contains the correct API Key.
-* **Extract From Key Location:** Fetches the content from the Key Location URL and places it in the API Key field.
-* **Fetched URL List:** All URLs are loaded here. You can manually check or uncheck them.
-* **Action Buttons:**
-    * `Save As Project`: Saves your API Key, Key Location, and Sitemap URL for later use.
-    * `Open Project`: Loads a previously saved project.
-    * `Submit To IndexNow`: Submits all **checked** URLs to the IndexNow API.
-
-### 2. Submit Using File
-Ideal for submitting a custom list of URLs.
-* **Load From File...:** Opens a dialog to select a `.txt` file. The file should contain one URL per line.
-* The application will load all valid URLs from the file into the list, ready for submission.
-* The API Key, Key Location, and Action buttons work the same way as the Sitemap tab.
-
-### 3. Submit Individual URL
-The quickest way to submit one or just a few URLs.
-* **Multiline Input:** Use the radio buttons to toggle the textbox between a single-line and a multi-line view, complete with scrollbars.
-* Simply paste your URL(s) into the box (one per line if in multi-line mode).
-* Fill in your API details and click the submit button.
+1.  **Download:** Navigate to the **[Releases](https://github.com/NarendraDwivedi/IndexNow-Submitter/releases)** page of this repository and download the latest `.zip` file (e.g., `IndexNow.Submitter.zip`).
+2.  **Extract:** Extract the contents of the zip file to a folder on your computer.
+3.  **Run:** Double-click `IndexNow Submitter.exe` to launch the application.
+    (Requires .NET Framework 4.7.2 or above, usually pre-installed on Windows 10/11).
 
 ---
 
-## ☁️ (Optional) Advanced Setup: Using the Cloudflare Worker
+## 📖 Detailed Walkthrough & Full Guide
 
-For users who don't want to manually upload a key file via FTP, you can deploy a free Cloudflare Worker to handle key hosting and generation automatically.
+For a comprehensive guide on how to use every feature of the IndexNow Submitter and to understand the power of instant indexing, please read the full article on my website:
+
+➡️ **[IndexNow Submitter: Your Free Tool to Submit URLs for Faster SEO Results](https://www.narendradwivedi.org/2025/09/indexnow-submitter-tool-to-submit-urls.html)**
+
+---
+
+## ☁️ (Optional) Advanced Setup: Using the Cloudflare Worker & Blogger Integration
+
+For users who want to automate key hosting (no FTP needed!) and even implement IndexNow on their Blogger website, you can deploy a free Cloudflare Worker.
 
 <details>
-  <summary>Click to view Cloudflare Worker setup instructions</summary>
-  
+  <summary>Click to view Cloudflare Worker details</summary>
+
   ### What it Does
-  This script, when deployed, creates two endpoints on your domain:
-  1. `https://your.domain/indexnow/generate`: Generates a new API key.
-  2. `https://your.domain/indexnow/YOUR_KEY`: Acts as the key file itself.
+  This script, when deployed, creates two powerful endpoints on your domain:
+  1.  `https://your.domain/indexnow/generate`: Instantly generates a new API key.
+  2.  `https://your.domain/indexnowYOUR_KEY`: Acts as the key file itself, accessible via a URL.
 
-  ### How to Deploy
-Read article on NarendraDwivedi.Org 
+  ### How to Deploy & Use with Blogger
+  For complete, step-by-step instructions on how to deploy this Cloudflare Worker and integrate IndexNow seamlessly with your Blogger website, please refer to the full guide below.
+</details>
+
+➡️ **[How to Use IndexNow on Blogger: A Step-by-Step Guide](https://www.narendradwivedi.org/2025/09/how-to-use-indexnow-on-blogger.html)**
+
+
 ---
+![IndexNow Tool UI](indexnow%20submitter.JPG)
 
-## 📜 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details.
-
----
-
-## 🙏 Acknowledgments
-
-* This tool was built to simplify the process of using the powerful **IndexNow** protocol.
-* Built with Visual Basic .NET and the Newtonsoft.Json library.
+![IndexNow Tool UI](indexnow.JPG)
 
 ---
 
-Created with ❤️ by **Narendra Dwivedi**. Find me on [LinkedIn](https://linkedin.com/in/narendradwivedi) or at my [Website](https://www.narendradwivedi.org).
+Developed by **Narendra Dwivedi**.
+Connect with me:
+* [Website](https://www.narendradwivedi.org)
+* [LinkedIn](https://linkedin.com/in/narendradwivedi)
+* [Instagram](https://instagram.com/thebestnd)
